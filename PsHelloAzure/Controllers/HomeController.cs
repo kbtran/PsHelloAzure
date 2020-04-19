@@ -27,6 +27,11 @@ namespace PsHelloAzure.Controllers
             return View("Index", model);
         }
 
+        public IActionResult Test()
+        {
+            throw new InvalidOperationException("Sorry, this feature is not supported.");
+        }
+
         public IActionResult Privacy()
         {
             return View();
