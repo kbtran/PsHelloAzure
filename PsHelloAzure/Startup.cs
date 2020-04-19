@@ -32,7 +32,8 @@ namespace PsHelloAzure
             services.AddApplicationInsightsTelemetry();
 
             // Add application services.
-            services.AddTransient<CourseStore>();
+            services.AddSingleton<CourseStore>();
+            services.AddSingleton<ImageStore>();
 
         }
 
